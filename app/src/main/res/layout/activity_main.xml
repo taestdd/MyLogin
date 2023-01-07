@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="40dp"
+    android:background="f3f3f3"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,17 +28,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Input E-mail"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail Address"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Input Password"/>
 
     <EditText
@@ -45,6 +51,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Input Nickname"/>
 
     <EditText
@@ -58,11 +65,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="I agree"
-        android:checked="true"/>
+        android:layout_marginTop="4dp"
+        android:checked="true"
+        android:visibility="visible"
+        />
+
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
 
@@ -70,6 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="man"
+            android:layout_marginRight="8dp"
             android:checked="true"/>
 
         <RadioButton
@@ -82,8 +95,10 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Done"/>
+        android:layout_height="52"
+        android:layout_marginTop="24dp"
+        android:text="Done"
+        android:enabled="false"/>
 
 
 
