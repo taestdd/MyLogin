@@ -7,14 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="88dp"
-        android:layout_height="120dp"
-        android:src="@drawable/logo_00"
-        android:scaleType="fitCenter"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_00"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Input E-mail"/>
 
@@ -25,7 +33,7 @@
         android:inputType="textEmailAddress"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Input Password"/>
 
@@ -35,7 +43,7 @@
         android:hint="8 cord"
         android:inputType="textPassword"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Input Nickname"/>
 
@@ -47,13 +55,13 @@
         android:imeOptions="actionGo"/>
 
     <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="I agree"
         android:checked="true"/>
 
     <RadioGroup
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
